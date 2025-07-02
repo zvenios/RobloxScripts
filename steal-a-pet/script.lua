@@ -2,7 +2,7 @@ local Player = game:GetService("Players").LocalPlayer
 local Workspace = game:GetService("Workspace")
 local DefaultSpeed = 50
 local TeleportDistance = 10
-local TeleportBackDelay = 1
+local TeleportBackDelay = 0.25
 local TargetHoldDuration = 0.01
 
 local screenGui = Instance.new("ScreenGui")
