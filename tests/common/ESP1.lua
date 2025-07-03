@@ -26,8 +26,7 @@ function updatePlayerHighlight(player)
 		local highlight = Instance.new("Highlight")
 		highlight.FillTransparency = 0.5
 		highlight.OutlineTransparency = 0
-		
-		local fillColor = Color3.fromRGB(1, 0, 0)
+
 		highlight.FillColor = Color3.fromRGB(255, 0, 0)
 		highlight.OutlineColor = Color3.fromRGB(0, 255, 0)
 
