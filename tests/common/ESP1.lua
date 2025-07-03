@@ -18,12 +18,7 @@ function updatePlayerHighlight(player)
 	end
 
 	-- Проверяем условия для подсветки
-	local localTeam = localPlayer.Team
-	local playerTeam = player.Team
-
 	if 
-		localTeam and playerTeam and 
-		localTeam == playerTeam and
 		player.Character and
 		player.Character:FindFirstChild("Humanoid") and
 		player.Character.Humanoid.Health > 0
@@ -36,7 +31,7 @@ function updatePlayerHighlight(player)
 		-- Используем TeamColor игрока (белый если нет команды)
 		local fillColor = player.TeamColor.Color
 		highlight.FillColor = fillColor
-		highlight.OutlineColor = Color3.new(1, 1, 1)
+		--highlight.OutlineColor = Color3.new(1, 1, 1)
 
 		highlight.Parent = player.Character
 		data.highlight = highlight
