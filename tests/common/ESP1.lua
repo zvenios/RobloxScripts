@@ -29,9 +29,9 @@ function updatePlayerHighlight(player)
 		highlight.OutlineTransparency = 0
 
 		-- Используем TeamColor игрока (белый если нет команды)
-		local fillColor = player.TeamColor.Color
+		local fillColor = Color3.new(1, 0, 0)
 		highlight.FillColor = fillColor
-		--highlight.OutlineColor = Color3.new(1, 1, 1)
+		highlight.OutlineColor = Color3.new(0, 1, 0)
 
 		highlight.Parent = player.Character
 		data.highlight = highlight
