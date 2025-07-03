@@ -36,7 +36,7 @@ function updatePlayerHighlight(player)
 		-- Используем TeamColor игрока (белый если нет команды)
 		local fillColor = player.TeamColor.Color
 		highlight.FillColor = fillColor
-		highlight.OutlineColor = fillColor * 0.7 -- Более темный оттенок для контура
+		highlight.OutlineColor = Color3.new(1, 1, 1)
 
 		highlight.Parent = player.Character
 		data.highlight = highlight
