@@ -23,15 +23,13 @@ function updatePlayerHighlight(player)
 		player.Character:FindFirstChild("Humanoid") and
 		player.Character.Humanoid.Health > 0
 	then
-		-- Создаем новую подсветку с цветом команды
 		local highlight = Instance.new("Highlight")
 		highlight.FillTransparency = 0.5
 		highlight.OutlineTransparency = 0
-
-		-- Используем TeamColor игрока (белый если нет команды)
-		local fillColor = Color3.new(1, 0, 0)
-		highlight.FillColor = fillColor
-		highlight.OutlineColor = Color3.new(0, 1, 0)
+		
+		local fillColor = Color3.fromRGB(1, 0, 0)
+		highlight.FillColor = Color3.fromRGB(255, 0, 0)
+		highlight.OutlineColor = Color3.fromRGB(0, 255, 0)
 
 		highlight.Parent = player.Character
 		data.highlight = highlight
